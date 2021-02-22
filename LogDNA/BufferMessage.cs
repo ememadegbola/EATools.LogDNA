@@ -15,6 +15,6 @@ namespace EATools.LogDNA
         /// The log lines.
         /// </value>
         [JsonProperty("lines")]
-        public IEnumerable<LogLine> LogLines { get; set; }
+        public IEnumerable<LogLine> LogLines { get; set; } = new List<LogLine>();
     }
 }
