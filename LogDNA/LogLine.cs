@@ -9,14 +9,14 @@ namespace RedBear.LogDNA
     [JsonObject(MemberSerialization.OptIn)]
     public class LogLine
     {
-        /// <summary>
-        /// Gets the type of the LogDNA object.
-        /// </summary>
-        /// <value>
-        /// Value is always "l".
-        /// </value>
-        [JsonProperty("e")]
-        public string LogObjectType => "l";
+        ///// <summary>
+        ///// Gets the type of the LogDNA object.
+        ///// </summary>
+        ///// <value>
+        ///// Value is always "l".
+        ///// </value>
+        //[JsonProperty("e")]
+        //public string LogObjectType => "l";
 
         /// <summary>
         /// Gets or sets the timestamp of the log line.
@@ -24,7 +24,6 @@ namespace RedBear.LogDNA
         /// <value>
         /// The timestamp.
         /// </value>
-        [JsonProperty("t")]
         public long Timestamp { get; set; }
 
         /// <summary>
@@ -33,8 +32,7 @@ namespace RedBear.LogDNA
         /// <value>
         /// The content.
         /// </value>
-        [JsonProperty("l")]
-        public string Content { get; set; }
+        public string Line { get; set; }
 
         /// <summary>
         /// Gets or sets the filename from which the log line originates. In many cases, this won't be a file but a process name.
@@ -43,7 +41,7 @@ namespace RedBear.LogDNA
         /// The filename or process name.
         /// </value>
         [JsonProperty("f")]
-        public string Filename { get; set; }
+        public string File { get; set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LogLine"/> class using the current date and time as the timestamp.
@@ -53,8 +51,8 @@ namespace RedBear.LogDNA
         public LogLine(string logName, string content)
         {
             Timestamp = DateTime.Now.ToJavaTimestamp();
-            Content = content.Length > 32000 ? content.Substring(0, 32000) : content;
-            Filename = logName;
+            Line = content.Length > 32000 ? content.Substring(0, 32000) : content;
+            File = logName;
         }
 
         /// <summary>
@@ -66,8 +64,8 @@ namespace RedBear.LogDNA
         public LogLine(string logName, string content, DateTime now)
         {
             Timestamp = now.ToJavaTimestamp();
-            Content = content.Length > 32000 ? content.Substring(0, 32000) : content;
-            Filename = logName;
+            Line = content.Length > 32000 ? content.Substring(0, 32000) : content;
+            File = logName;
         }
     }
 }

@@ -9,21 +9,12 @@ namespace RedBear.LogDNA
     public class BufferMessage
     {
         /// <summary>
-        /// Gets the type of the LogDNA object.
-        /// </summary>
-        /// <value>
-        /// Value is always "ls".
-        /// </value>
-        [JsonProperty("e")]
-        public string LogObjectType => "ls";
-
-        /// <summary>
         /// Gets the log lines.
         /// </summary>
         /// <value>
         /// The log lines.
         /// </value>
-        [JsonProperty("ls")]
+        [JsonProperty("lines")]
         public IEnumerable<LogLine> LogLines { get; set; }
     }
 }

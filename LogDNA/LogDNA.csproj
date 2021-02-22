@@ -5,9 +5,17 @@
     <AssemblyName>RedBear.LogDNA</AssemblyName>
     <RootNamespace>RedBear.LogDNA</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageProjectUrl>https://github.com/RedBearSys/RedBear.LogDNA</PackageProjectUrl>
-    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ememadegbola/EATools.LogDNA</PackageProjectUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <Description>.NET Standard LogDNA client</Description>
+    <PackageId>EATools.LogDNA</PackageId>
+    <Version>1.0.0</Version>
+    <Copyright />
+    <Authors>Emem Adegbola</Authors>
+    <Company />
+    <Product>EATools.LogDNA</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

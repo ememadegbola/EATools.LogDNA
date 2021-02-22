@@ -88,7 +88,7 @@ namespace RedBear.LogDNA
             using (var client = new HttpClient(handler))
             {
                 var request = new HttpRequestMessage(HttpMethod.Post,
-                    $"{Configuration.HttpProtocol}{Configuration.LogServer}:{Configuration.LogServerPort}/logs/agent?timestamp={DateTime.Now.ToJavaTimestamp()}&hostname={Configuration.HostName}&mac=&ip=&tags={Configuration.AllTags}&compress=1");
+                    $"{Configuration.HttpProtocol}{Configuration.LogServer}:{Configuration.LogServerPort}/logs/ingest?hostname={Configuration.HostName}&mac=&ip=&tags={Configuration.AllTags}&compress=1");
  
                 var authBytes = Encoding.ASCII.GetBytes($"x:{Configuration.IngestionKey}");
                 request.Headers.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(authBytes));
