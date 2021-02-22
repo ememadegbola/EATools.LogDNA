@@ -1,4 +1,4 @@
-using RedBear.LogDNA;
+using EATools.LogDNA;
 using System;
 using System.Threading;
 // ReSharper disable once RedundantUsingDirective

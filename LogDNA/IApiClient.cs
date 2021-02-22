@@ -1,4 +1,4 @@
-﻿namespace RedBear.LogDNA
+﻿namespace EATools.LogDNA
 {
     public interface IApiClient
     {

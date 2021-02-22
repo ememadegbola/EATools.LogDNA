@@ -13,7 +13,7 @@ using System.Threading;
 using System.Timers;
 using Timer = System.Timers.Timer;
 
-namespace RedBear.LogDNA
+namespace EATools.LogDNA
 {
     /// <summary>
     /// Main class for communicating with the LogDNA servers.

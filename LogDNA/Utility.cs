@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RedBear.LogDNA
+namespace EATools.LogDNA
 {
     internal static class Utility
     {

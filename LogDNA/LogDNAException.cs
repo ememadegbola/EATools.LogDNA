@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace RedBear.LogDNA
+namespace EATools.LogDNA
 {
     // ReSharper disable once InconsistentNaming
     /// <summary>
-    /// An exception related to the RedBear.LogDNA library.
+    /// An exception related to the EATools.LogDNA library.
     /// </summary>
     /// <seealso cref="System.Exception" />
     public class LogDNAException : Exception

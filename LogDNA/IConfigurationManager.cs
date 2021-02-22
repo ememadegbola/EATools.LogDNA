@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace RedBear.LogDNA
+namespace EATools.LogDNA
 {
     public interface IConfigurationManager
     {
@@ -94,7 +94,7 @@ namespace RedBear.LogDNA
         /// Gets the name of this agent.
         /// </summary>
         /// <value>
-        /// "RedBear.LogDNA"
+        /// "EATools.LogDNA"
         /// </value>
         string AgentName { get; }
 

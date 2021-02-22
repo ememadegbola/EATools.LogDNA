@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>RedBear.LogDNA</AssemblyName>
-    <RootNamespace>RedBear.LogDNA</RootNamespace>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>EATools.LogDNA</AssemblyName>
+    <RootNamespace>EATools.LogDNA</RootNamespace>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/ememadegbola/EATools.LogDNA</PackageProjectUrl>
     <PackageLicenseUrl></PackageLicenseUrl>
@@ -16,10 +16,12 @@
     <Product>EATools.LogDNA</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
     <PackageReference Include="websocketsharp.core" Version="1.0.0" />
   </ItemGroup>
 

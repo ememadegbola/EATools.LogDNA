@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using RedBear.LogDNA.Properties;
+using EATools.LogDNA.Properties;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Timers;
 using WebSocketSharp;
 using Timer = System.Timers.Timer;
 
-namespace RedBear.LogDNA
+namespace EATools.LogDNA
 {
     /// <summary>
     /// Main class for communicating with the LogDNA servers.

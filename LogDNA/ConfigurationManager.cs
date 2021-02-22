@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading;
 
-namespace RedBear.LogDNA
+namespace EATools.LogDNA
 {
     /// <summary>
     /// Contains runtime settings for the ApiClient.
@@ -100,10 +100,10 @@ namespace RedBear.LogDNA
         /// Gets the name of this agent.
         /// </summary>
         /// <value>
-        /// "RedBear.LogDNA"
+        /// "EATools.LogDNA"
         /// </value>
         [JsonProperty("agentname")]
-        public string AgentName => "RedBear.LogDNA";
+        public string AgentName => "EATools.LogDNA";
 
         /// <summary>
         /// Gets the agent version.

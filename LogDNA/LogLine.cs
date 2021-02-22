@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace RedBear.LogDNA
+namespace EATools.LogDNA
 {
     /// <summary>
     /// Represents a single line of a log file.
